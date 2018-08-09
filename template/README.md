@@ -2,6 +2,10 @@
 
 > {{ description }}
 
+## 项目使用技术
+
+   vue + vue-router + vuex + element + geekLibs + i18n 实现国际化
+
 ## Build Setup
 
 ``` bash

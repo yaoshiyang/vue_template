@@ -69,6 +69,22 @@ module.exports = {
     }],
     {{/if_eq}}
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': 'off',
+    'no-underscore-dangle': ["error", { "allowAfterThis": true }],
+    'max-len': ["error", { "code": 160 }],
+    'linebreak-style': ["off", "windows"],
+    'eqeqeq': 1, // 是否检查全等
+    "max-len": 0, // 是否检查每行长度
+    "camelcase": 0, // 是否必须驼峰式
+    "no-unused-vars": [2, {
+            // 允许声明未使用变量
+        "vars": "local",
+            // 参数不检查
+        "args": "none"
+    }],
+    "no-bitwise": 0,
+    "no-plusplus": 0, // 支持双+
+    "no-unused-expressions": 0
   }
 }
