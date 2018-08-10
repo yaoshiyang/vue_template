@@ -20,7 +20,7 @@ const { language } = localStorage;
 const langs = language || window.navigator.language;
 
 const i18n = new VueI18n({
-  locale: langs == 'zh-CN' ? langs : 'ja', // set locale
+  locale: langs === 'zh-CN' ? langs : 'ja', // set locale
   messages, // set locale messages
 });
 

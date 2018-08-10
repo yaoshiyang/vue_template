@@ -1,0 +1,9 @@
+ {
+  "RMSURL": "ws://10.44.51.1:8890",
+  "clientId":"9528",
+  "language": "CN",
+  "StationWSURL": "ws://172.16.1.38:8889",
+  "MonitorWSURL": "ws://172.16.1.38:8890",
+  "StationMonitorURL": "ws://172.16.1.38:8891",
+  "SeedingWallWSURL": "ws://172.16.1.38:8892"
+}

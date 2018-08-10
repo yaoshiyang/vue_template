@@ -2,6 +2,10 @@
 
 > {{ description }}
 
+## 注意点
+
+   1. serverIP 和 static -> config.json 是因为引入libs,里面需要用到
+
 ## 项目使用技术
 
    vue + vue-router + vuex + element + geekLibs + i18n 实现国际化
@@ -11,6 +15,9 @@
 ``` bash
 # install dependencies
 npm install
+
+# git submodule
+git submodule add http://172.16.19.6:82/FED/GEEKLIB.git src/libs
 
 # serve with hot reload at localhost:8080
 npm run dev

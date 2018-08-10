@@ -3,10 +3,10 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
+const DEV_SERVER_IP = '10.44.51.1';
 module.exports = {
   dev: {
-
+    serverIP: DEV_SERVER_IP,
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',

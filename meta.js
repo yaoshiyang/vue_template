@@ -124,11 +124,11 @@ module.exports = {
         //         },
         //     ],
         // },
-        e2e: {
-            when: 'isNotTest',
-            type: 'confirm',
-            message: 'Setup e2e tests with Nightwatch?',
-        },
+        // e2e: {
+        //     when: 'isNotTest',
+        //     type: 'confirm',
+        //     message: 'Setup e2e tests with Nightwatch?',
+        // },
         autoInstall: {
             when: 'isNotTest',
             type: 'list',
@@ -154,16 +154,16 @@ module.exports = {
     filters: {
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint',
-        // 'config/test.env.js': 'unit || e2e',
-        // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
-        // 'test/unit/**/*': 'unit',
-        // 'test/unit/index.js': "unit && runner === 'karma'",
-        // 'test/unit/jest.conf.js': "unit && runner === 'jest'",
-        // 'test/unit/karma.conf.js': "unit && runner === 'karma'",
-        // 'test/unit/specs/index.js': "unit && runner === 'karma'",
-        // 'test/unit/setup.js': "unit && runner === 'jest'",
-        'test/e2e/**/*': 'e2e',
-        // 'src/routers/**/*': 'routers',
+        'config/test.env.js': 'false',
+        'build/webpack.test.conf.js': "false",
+        'test/unit/**/*': 'false',
+        'test/unit/index.js': "false",
+        'test/unit/jest.conf.js': "false",
+        'test/unit/karma.conf.js': "false",
+        'test/unit/specs/index.js': "false",
+        'test/unit/setup.js': "false",
+        'test/e2e/**/*': 'false',
+        'src/**/**/*': 'true',
     },
     complete: function(data, { chalk }) {
         const green = chalk.green
