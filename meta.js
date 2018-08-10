@@ -37,6 +37,7 @@ module.exports = {
             when: 'isNotTest',
             type: 'string',
             required: true,
+            default: 'geek+',
             message: '请输入项目名称',
         },
         description: {
@@ -44,7 +45,7 @@ module.exports = {
             type: 'string',
             required: false,
             message: '项目描述',
-            default: '北京极智嘉系统',
+            default: 'geek+系统',
         },
         author: {
             when: 'isNotTest',

@@ -16,7 +16,7 @@ npm install
 git submodule add http://172.16.19.6:82/FED/GEEKLIB.git src/libs
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run start
 
 # build for production with minification
 npm run build
